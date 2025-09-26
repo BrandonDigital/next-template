@@ -4,24 +4,38 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "devs": "next dev --turbopack --experimental-https",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "audit": "node scripts/audit-filter.js",
+    "icon": "node scripts/generate-icons.js"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.2",
+    "drizzle-orm": "^0.44.5",
+    "next": "15.5.4",
+    "postgres": "^3.4.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "react-icons": "^5.5.0",
+    "web-push": "^3.6.7",
+    "zod": "^4.1.11"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@types/web-push": "^3.6.4",
+    "drizzle-kit": "^0.31.4",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
-    "@eslint/eslintrc": "^3"
+    "sharp": "^0.34.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
