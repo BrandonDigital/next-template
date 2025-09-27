@@ -1,11 +1,16 @@
 export const config = {
   app: {
-    name: "Next.js PWA Template",
-    shortName: "NextPWA",
+    name: "Template",
+    shortName: "Template",
     description:
-      "A Next.js Progressive Web App template with push notifications",
+      "A Next.js Template with authentication, push notifications, dashboard, custom standalone ui, and database.",
     url: "https://your-website.com",
     email: "your-email@example.com",
+  },
+  admin: {
+    email: "admin@example.com",
+    password: "admin",
+    name: "Admin",
   },
   pwa: {
     themeColor: "#000000",
